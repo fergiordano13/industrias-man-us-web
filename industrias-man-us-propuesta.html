@@ -696,7 +696,6 @@
           <div class="txt">Made with<b id="recMadeWith">MAN Blender LMV-9090</b></div>
         </div>
         <div class="rec-desc" id="recDesc">A light, refreshing blend ready in minutes, thanks to the 7-speed power of your MAN blender. Perfect for a quick, wholesome breakfast.</div>
-        <a href="https://manindustries.us/blogs/recipes/weight-loss-smoothies-low-calorie-filling-and-quick" target="_blank" id="recLink" class="btn-view">View Recipe</a>
       </div>
       <div class="rec-photo"><img id="recPhoto" src="MAN USA/Blog-Recetas/BLOGREC_smoothie-fresa-chia.png" alt="Recipe"></div>
       <div class="rec-nav">
@@ -898,24 +897,21 @@
       madeWith:'MAN Blender LMV-9090',
       icon:'MAN USA/Licuadora-LMV-9090/Fotos-producto/BLEND9090_blender.png',
       desc:'A light, refreshing blend ready in minutes, thanks to the 7-speed power of your MAN blender. Perfect for a quick, wholesome breakfast.',
-      photo:'MAN USA/Blog-Recetas/BLOGREC_smoothie-fresa-chia.png',
-      url:'https://manindustries.us/blogs/recipes/weight-loss-smoothies-low-calorie-filling-and-quick'
+      photo:'MAN USA/Blog-Recetas/BLOGREC_smoothie-fresa-chia.png'
     },
     {
       title:'Pineapple, Cucumber &amp; Ginger<strong>Green Juice</strong>',
       madeWith:'MAN Blender LMV-9090',
       icon:'MAN USA/Licuadora-LMV-9090/Fotos-producto/BLEND9090_blender.png',
       desc:'A light, hydrating green juice packed with natural enzymes that help wake up digestion from the very first sip — ready in minutes with the 7-speed power of your MAN blender.',
-      photo:'MAN USA/Blog-Recetas/BLOGREC_jugo-verde-digestivo.jpg',
-      url:'https://manindustries.us/blogs/recipes/the-5-best-juices-to-improve-digestion-and-take-care-of-your-intestinal-health'
+      photo:'MAN USA/Blog-Recetas/BLOGREC_jugo-verde-digestivo.jpg'
     },
     {
       title:'Chocolate Avocado<strong>Smoothie</strong>',
       madeWith:'MAN Blender LMV-9090',
       icon:'MAN USA/Licuadora-LMV-9090/Fotos-producto/BLEND9090_blender.png',
       desc:'A creamy, protein-packed snack blending ripe avocado, chocolate protein and almond milk, smoothed out in seconds with the 7-speed power of your MAN blender.',
-      photo:'MAN USA/Blog-Recetas/BLOGREC_licuado-chocolate-proteico.jpg',
-      url:'https://manindustries.us/blogs/recipes/easy-high-protein-smoothie-recipes-you-can-make-at-home'
+      photo:'MAN USA/Blog-Recetas/BLOGREC_licuado-chocolate-proteico.jpg'
     }
   ];
   let recIndex = 0;
@@ -926,7 +922,6 @@
   const recMadeWith = document.getElementById('recMadeWith');
   const recDesc = document.getElementById('recDesc');
   const recProgress = document.getElementById('recProgress');
-  const recLink = document.getElementById('recLink');
   let recTimer;
 
   function renderRecipe(i){
@@ -937,7 +932,6 @@
     recIcon.src = r.icon;
     recMadeWith.textContent = r.madeWith;
     recDesc.textContent = r.desc;
-    recLink.href = r.url;
     recProgress.style.transform = 'translateX(0%)';
     recProgress.style.width = (100/recipes.length) + '%';
     recProgress.style.marginLeft = (i * (100/recipes.length)) + '%';
